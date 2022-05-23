@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8"> 
+ <title>Video Player</title>
+ <link rel="stylesheet" href="./style.css">
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+   
+ <div class="player">
+  <video class="player__video viewer" src="./inspiring-video-test.mp4"></video>
+  <div class="thumbnail" style="display: none;">
+    <img src="./thumbnail.png" alt="Vidoe thumbnail"/>
+    </div>
+  <div class="player__controls player__controls--visible">
+   <div class="progress">
+    <div class="progress__filled"></div>
+   </div>
+   <div class="player__controls-holder">
+    <button class="player__button togglePlayback" title="Toggle Play"><i class="player__playbackIcon"></i></button>
+    <input type="range" name="volume" class="player__slider playerVolume" min="0" max="1" step="0.05" value="1">
+    <span class="player__durations"><span class="player__currentTime">Test</span> / <span class="player__totalTime"></span></span>
+   </div>
+   <div class="player__controls-holder">
+    <button class="player__button toggleFullscreen" title="Toggle Play">⛶</button>
+   </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
